@@ -11,12 +11,87 @@ import com.mcqquiz.quizcode.databinding.ActivitySelectQuizBinding
 
 class SelectQuiz : AppCompatActivity() {
 
+    private lateinit var binding: ActivitySelectQuizBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_select_quiz)
+        binding = ActivitySelectQuizBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         supportActionBar?.hide()
 
-        
+        val scale=AnimationUtils.loadAnimation(this,R.anim.scale)
+
+        binding.c.startAnimation(scale)
+        binding.cpp.startAnimation(scale)
+        binding.java.startAnimation(scale)
+        binding.python.startAnimation(scale)
+        binding.html.startAnimation(scale)
+
+        binding.javascript.startAnimation(scale)
+        binding.csharp.startAnimation(scale)
+        binding.kotlin.startAnimation(scale)
+        binding.mysql.startAnimation(scale)
+        binding.firebase.startAnimation(scale)
+
+        binding.c.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","c")
+            startActivity(intent)
+        }
+
+        binding.cpp.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","cpp")
+            startActivity(intent)
+        }
+
+        binding.java.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","java")
+            startActivity(intent)
+        }
+
+        binding.python.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","python")
+            startActivity(intent)
+        }
+
+        binding.html.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","html")
+            startActivity(intent)
+        }
+
+        binding.javascript.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","javascript")
+            startActivity(intent)
+        }
+
+        binding.csharp.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","csharp")
+            startActivity(intent)
+        }
+
+        binding.kotlin.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","kotlin")
+            startActivity(intent)
+        }
+
+        binding.mysql.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","mysql")
+            startActivity(intent)
+        }
+
+        binding.firebase.setOnClickListener{
+            val intent = Intent(this,Level::class.java)
+            intent.putExtra("name","firebase")
+            startActivity(intent)
+        }
+
     }
 }
