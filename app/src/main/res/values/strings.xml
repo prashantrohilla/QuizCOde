@@ -13,8 +13,8 @@
     <string name="csharp">C#</string>
     <string name="android">Android</string>
     <string name="kotlin">Kotlin</string>
-    <string name="r">R</string>
-    <string name="scala">Scala</string>
+    <string name="mysql">Mysql</string>
+    <string name="firebase">Firebase</string>
     <string name="select_level">Select Set</string>
     <string name="easy">Set 1</string>
     <string name="medium">Set 2</string>
