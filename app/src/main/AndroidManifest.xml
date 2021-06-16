@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizCOde">
-        <activity android:name=".QuestionsActivity"></activity>
+        <activity android:name=".DynamicActivity"></activity>
+        <activity android:name=".QuestionsActivity" />
         <activity android:name=".ActivityFirebase" />
         <activity android:name=".ActivityMysql" />
         <activity android:name=".SelectQuiz" />

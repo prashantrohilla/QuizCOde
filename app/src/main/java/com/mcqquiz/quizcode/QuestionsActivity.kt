@@ -209,12 +209,14 @@ class QuestionsActivity : AppCompatActivity() {
     private fun setQuestion() {
         val question = questionsList!![position - 1]
 
+
         binding.questionNumber.text = question.id.toString()
         binding.question.text = question!!.question
         binding.option1.text = question.optionOne
         binding.option2.text = question.optionTwo
         binding.option3.text = question.optionThree
         binding.option4.text = question.optionFour
+        binding.progressbar.progress =question.id*10
 
         op1=false
         op2=false

@@ -80,6 +80,13 @@ class Level : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.dynamic.setOnClickListener{
+
+            val intent = Intent(this,DynamicActivity::class.java)
+            intent.putExtra("name",name)
+            startActivity(intent)
+        }
+
     }
 
     private fun Animations()
@@ -90,6 +97,7 @@ class Level : AppCompatActivity() {
         binding.easy.startAnimation(translate)
         binding.medium.startAnimation(ntranslate)
         binding.hard.startAnimation(translate)
+        binding.dynamic.startAnimation(ntranslate)
     }
 }
 

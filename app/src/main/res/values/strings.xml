@@ -5,6 +5,7 @@
     <string name="select_quiz">Select Quiz</string>
     <string name="c">C</string>
     <string name="php">PHP</string>
+    <string name="num">20</string>
 
     <string name="java">Java</string>
     <string name="python">Python</string>
@@ -23,6 +24,8 @@
     <string name="hard">Set 3</string>
     <string name="each">Each set contains 10 questions.</string>
     <string name="leave">Leave</string>
+    <string name="dynamic">Dynamic</string>
+    <string name="remaining">Seconds Remaining</string>
 
     <string name="total_incorrect">Incorrect Answers :</string>
     <string name="total_correct">Correct Answers :</string>
