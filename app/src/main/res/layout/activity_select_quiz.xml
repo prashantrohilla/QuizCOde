@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/background2"
+        android:src="@drawable/back"
         android:scaleType="centerCrop"
         tools:ignore="ContentDescription" />
 
@@ -297,7 +297,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/kotlin"
+                android:id="@+id/php"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -310,7 +310,7 @@
                 <ImageView
                     android:layout_width="90dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/kotlin"
+                    android:src="@drawable/php"
                     android:layout_margin="10dp"
                     tools:ignore="ContentDescription"
                     android:padding="5dp"
@@ -319,7 +319,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/kotlin"
+                    android:text="@string/php"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/cssblue"
@@ -369,7 +369,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/firebase"
+                android:id="@+id/mongodb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -382,7 +382,7 @@
                 <ImageView
                     android:layout_width="90dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/firebase"
+                    android:src="@drawable/mongodb2"
                     android:layout_margin="10dp"
                     tools:ignore="ContentDescription"
                     android:padding="5dp"
@@ -391,12 +391,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/firebase"
+                    android:text="@string/mongodb"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/cssblue"
-                    android:layout_marginBottom="5dp"
-                    />
+                    android:layout_marginBottom="5dp" />
 
             </LinearLayout>
 

@@ -18,7 +18,6 @@ class Level : AppCompatActivity() {
         supportActionBar?.hide()
 
         var name=intent.getStringExtra("name")
-
         var list:String=""
 
         Animations()
@@ -33,9 +32,9 @@ class Level : AppCompatActivity() {
 
             if(name.equals("javascript")) list="javascript1"
             if(name.equals("csharp")) list= "csharp1"
-            if(name.equals("kotlin")) list="kotlin1"
+            if(name.equals("php")) list="php1"
             if(name.equals("mysql")) list="mysql1"
-            if(name.equals("firebase")) list="firebase1"
+            if(name.equals("mongodb")) list="mongodb1"
 
             val intent = Intent(this,QuestionsActivity::class.java)
             intent.putExtra("list",list)
@@ -53,9 +52,9 @@ class Level : AppCompatActivity() {
 
             if(name.equals("javascript")) list="javascript2"
             if(name.equals("csharp")) list= "csharp2"
-            if(name.equals("kotlin")) list="kotlin2"
+            if(name.equals("php")) list="php2"
             if(name.equals("mysql")) list="mysql2"
-            if(name.equals("firebase")) list="firebase2"
+            if(name.equals("mongodb")) list="mongodb2"
 
             val intent = Intent(this,QuestionsActivity::class.java)
             intent.putExtra("list",list)
@@ -68,13 +67,13 @@ class Level : AppCompatActivity() {
             if(name.equals("cpp")) list="cpp3"
             if(name.equals("java")) list="java3"
             if(name.equals("python")) list="python3"
-            if(name.equals("html")) list="html2"
+            if(name.equals("html")) list="html3"
 
             if(name.equals("javascript")) list="javascript3"
             if(name.equals("csharp")) list= "csharp3"
-            if(name.equals("kotlin")) list="kotlin3"
+            if(name.equals("php")) list="php3"
             if(name.equals("mysql")) list="mysql3"
-            if(name.equals("firebase")) list="firebase3"
+            if(name.equals("mongodb")) list="mongodb3"
 
             val intent = Intent(this,QuestionsActivity::class.java)
             intent.putExtra("list",list)

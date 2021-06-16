@@ -4,6 +4,7 @@
     <string name="submit">SUBMIT</string>
     <string name="select_quiz">Select Quiz</string>
     <string name="c">C</string>
+    <string name="php">PHP</string>
 
     <string name="java">Java</string>
     <string name="python">Python</string>
@@ -15,15 +16,17 @@
     <string name="kotlin">Kotlin</string>
     <string name="mysql">Mysql</string>
     <string name="firebase">Firebase</string>
+    <string name="mongodb">Mongo DB</string>
     <string name="select_level">Select Set</string>
     <string name="easy">Set 1</string>
     <string name="medium">Set 2</string>
     <string name="hard">Set 3</string>
     <string name="each">Each set contains 10 questions.</string>
+    <string name="leave">Leave</string>
 
-    <string name="total_incorrect">Total Incorrect Answers :-</string>
-    <string name="total_correct">Total Correct Answers :-</string>
-    <string name="your_score">Your Score :-</string>
+    <string name="total_incorrect">Incorrect Answers :</string>
+    <string name="total_correct">Correct Answers :</string>
+    <string name="your_score">Your Score :</string>
     <string name="play_again">PLAY AGAIN</string>
 
     <string name="one">1</string>

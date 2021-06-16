@@ -29,9 +29,9 @@ class SelectQuiz : AppCompatActivity() {
 
         binding.javascript.startAnimation(scale)
         binding.csharp.startAnimation(scale)
-        binding.kotlin.startAnimation(scale)
+        binding.php.startAnimation(scale)
         binding.mysql.startAnimation(scale)
-        binding.firebase.startAnimation(scale)
+        binding.mongodb.startAnimation(scale)
 
         binding.c.setOnClickListener{
             val intent = Intent(this,Level::class.java)
@@ -75,9 +75,9 @@ class SelectQuiz : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.kotlin.setOnClickListener{
+        binding.php.setOnClickListener{
             val intent = Intent(this,Level::class.java)
-            intent.putExtra("name","kotlin")
+            intent.putExtra("name","php")
             startActivity(intent)
         }
 
@@ -87,9 +87,9 @@ class SelectQuiz : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.firebase.setOnClickListener{
+        binding.mongodb.setOnClickListener{
             val intent = Intent(this,Level::class.java)
-            intent.putExtra("name","firebase")
+            intent.putExtra("name","mongodb")
             startActivity(intent)
         }
 

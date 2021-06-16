@@ -29,10 +29,8 @@ class QuestionsActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         Animations()
-        var list=intent.getStringExtra("list")
 
-        position = 1
-        questionsList = c1.getQuestions()
+        setList()
         setQuestion()
 
         binding.option1.setOnClickListener {
@@ -99,6 +97,12 @@ class QuestionsActivity : AppCompatActivity() {
             }
         }
 
+        binding.leave.setOnClickListener{
+            val intent = Intent(this,ResultActivity::class.java)
+            intent.putExtra("score",score.toString())
+            startActivity(intent)
+        }
+
         binding.submit.setOnClickListener {
             if(op1) selectedOption=1
             if(op2) selectedOption=2
@@ -115,7 +119,6 @@ class QuestionsActivity : AppCompatActivity() {
                 }
                 else
                 {
-
                     if(question.correctAnswer==selectedOption)
                     {
                         score+=1
@@ -147,13 +150,61 @@ class QuestionsActivity : AppCompatActivity() {
                 }
 
                 val intent = Intent(this,ResultActivity::class.java)
-                //intent.putExtra("list",list)
-                intent.putExtra("score",score)
+                intent.putExtra("score",score.toString())
                 startActivity(intent)
             }
 
         }
     }
+
+    private fun setList()
+    {
+        var list=intent.getStringExtra("list")
+
+        position = 1
+
+        if(list.equals("c1")) { questionsList = C1.getQuestions()}
+        if(list.equals("c2")) { questionsList = C2.getQuestions()}
+        if(list.equals("c3")) { questionsList = C3.getQuestions()}
+
+        if(list.equals("cpp1")) { questionsList = Cpp1.getQuestions()}
+        if(list.equals("cpp2")) { questionsList = Cpp2.getQuestions()}
+        if(list.equals("cpp3")) { questionsList = Cpp3.getQuestions()}
+
+        if(list.equals("csharp1")) { questionsList = Csharp1.getQuestions()}
+        if(list.equals("csharp2")) { questionsList = Csharp2.getQuestions()}
+        if(list.equals("csharp3")) { questionsList = Csharp3.getQuestions()}
+
+        if(list.equals("html1")) { questionsList = Html1.getQuestions()}
+        if(list.equals("html2")) { questionsList = Html2.getQuestions()}
+        if(list.equals("html3")) { questionsList = Html3.getQuestions()}
+
+        if(list.equals("java1")) { questionsList = Java1.getQuestions()}
+        if(list.equals("java2")) { questionsList = Java2.getQuestions()}
+        if(list.equals("java3")) { questionsList = Java3.getQuestions()}                    // 5
+
+        if(list.equals("javascript1")) { questionsList = Javascript1.getQuestions()}
+        if(list.equals("javascript2")) { questionsList = Javascript2.getQuestions()}
+        if(list.equals("javascript3")) { questionsList = Javascript3.getQuestions()}
+
+        if(list.equals("mongodb1")) { questionsList = Mongodb1.getQuestions()}
+        if(list.equals("mongodb2")) { questionsList = Mongodb2.getQuestions()}
+        if(list.equals("mongodb3")) { questionsList = Mongodb3.getQuestions()}
+
+        if(list.equals("mysql1")) { questionsList = Mysql1.getQuestions()}
+        if(list.equals("mysql2")) { questionsList = Mysql2.getQuestions()}
+        if(list.equals("mysql3")) { questionsList = Mysql3.getQuestions()}
+
+        if(list.equals("php1")) { questionsList = Php1.getQuestions()}
+        if(list.equals("php2")) { questionsList = Php2.getQuestions()}
+        if(list.equals("php3")) { questionsList = Php3.getQuestions()}
+
+        if(list.equals("python1")) { questionsList = Python1.getQuestions()}
+        if(list.equals("python2")) { questionsList = Python2.getQuestions()}
+        if(list.equals("python3")) { questionsList = Python3.getQuestions()}
+
+    }
+
 
     private fun setQuestion() {
         val question = questionsList!![position - 1]
