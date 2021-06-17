@@ -103,7 +103,7 @@ class DynamicActivity : AppCompatActivity() {
 
         binding.leave.setOnClickListener {
             val intent = Intent(this, ResultActivity::class.java)
-            intent.putExtra("score", score.toString())
+            intent.putExtra("score",total.toString())
             startActivity(intent)
         }
 
@@ -145,6 +145,7 @@ class DynamicActivity : AppCompatActivity() {
             } else {
                 if (question.correctAnswer == selectedOption) {
                     score += 1
+                    total+=1
                     val toast =
                         Toast.makeText(applicationContext, "Correct Answer", Toast.LENGTH_SHORT)
                     toast.show()
@@ -164,7 +165,6 @@ class DynamicActivity : AppCompatActivity() {
 
     private fun list() {
         var list = intent.getStringExtra("name")
-        total += score
 
         if (list.equals("c")) {
             if (position == 1) {
@@ -707,7 +707,7 @@ class DynamicActivity : AppCompatActivity() {
         binding.option3.setBackgroundResource(R.drawable.squarestroke)
         binding.option4.setBackgroundResource(R.drawable.squarestroke)
 
-        t=21000
+        t=16000
 
         timer = object : CountDownTimer(t, 1000) {
             override fun onFinish() {
@@ -758,7 +758,7 @@ class DynamicActivity : AppCompatActivity() {
     private fun next() {
         timer.cancel()
         val intent = Intent(this, ResultActivity::class.java)
-        intent.putExtra("score", total.toString())
+        intent.putExtra("score",total.toString())
         startActivity(intent)
     }
 

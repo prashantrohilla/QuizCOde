@@ -382,7 +382,7 @@
                 <ImageView
                     android:layout_width="90dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/mongodb2"
+                    android:src="@drawable/mongodb"
                     android:layout_margin="10dp"
                     tools:ignore="ContentDescription"
                     android:padding="5dp"

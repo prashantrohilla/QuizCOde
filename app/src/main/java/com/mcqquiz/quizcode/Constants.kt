@@ -47,7 +47,9 @@ object C1 {
         )
         questionsList.add(q4)
         val q5 =
-            Questions(5, "Number of Keywords present in C Language are?", "32", "34", "62", "64", 1)
+            Questions(5,
+                "Number of Keywords present in C Language are?",
+                "32", "34", "62", "64", 1)
         questionsList.add(q5)
         val q6 = Questions(
             6,

@@ -24,13 +24,14 @@
     <string name="hard">Set 3</string>
     <string name="each">Each set contains 10 questions.</string>
     <string name="leave">Leave</string>
-    <string name="dynamic">Dynamic</string>
+    <string name="dynamic">Time Based</string>
     <string name="remaining">Seconds Remaining</string>
 
     <string name="total_incorrect">Incorrect Answers :</string>
     <string name="total_correct">Correct Answers :</string>
     <string name="your_score">Your Score :</string>
     <string name="play_again">PLAY AGAIN</string>
+    <string name="quiz">Welcome to Quiz Code</string>
 
     <string name="one">1</string>
     <string name="two">2</string>

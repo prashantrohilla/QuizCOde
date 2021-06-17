@@ -27,9 +27,6 @@ class MainActivity : AppCompatActivity() {
         binding.android.startAnimation(scale)
         binding.startButton.startAnimation(translate)
 
-        val toast = Toast.makeText(applicationContext, "Developed BY Prashant Rohilla", Toast.LENGTH_LONG)
-        toast.show()
-
         binding.startButton.setOnClickListener{
             val intent = Intent(this,SelectQuiz::class.java)
             startActivity(intent)

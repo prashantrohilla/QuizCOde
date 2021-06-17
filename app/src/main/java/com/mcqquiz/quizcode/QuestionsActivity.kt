@@ -218,6 +218,7 @@ class QuestionsActivity : AppCompatActivity() {
         binding.option4.text = question.optionFour
         binding.progressbar.progress =question.id*10
 
+
         op1=false
         op2=false
         op3=false
